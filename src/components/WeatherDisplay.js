@@ -9,8 +9,8 @@ const WeatherDisplay = (props) => {
 
   return (
     <div style={styleObj}>
-        <h2>{data.temperature}</h2>
-        <h3>{data.conditions}</h3>
+        <p>{data.temperature}</p>
+        <p>{data.conditions}</p>
     </div>
   )
 }
