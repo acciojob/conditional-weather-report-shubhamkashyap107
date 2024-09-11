@@ -1,18 +1,20 @@
 import React from 'react'
 
 const WeatherDisplay = (props) => {
-    const{data} = props
+    const { data } = props;
 
-    const styleObj = {
-        color : data.temperature > 20 ? "red" : "blue"
-    }
+    // Define style for temperature based on the temperature value
+    const tempStyle = {
+        color: data.temperature > 20 ? "red" : "blue"
+    };
 
-  return (
-    <div style={styleObj}>
-        <p>{data.temperature}</p>
-        <p>{data.conditions}</p>
-    </div>
-  )
-}
+    return (
+        <div>
+            {/* Apply tempStyle to the temperature */}
+            <p>Temperature: <span style={tempStyle}>{data.temperature}</span></p>
+            <p>Conditions: <span>{data.conditions}</span></p>
+        </div>
+    );
+};
 
-export default WeatherDisplay
+export default WeatherDisplay;
