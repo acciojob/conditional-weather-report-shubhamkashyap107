@@ -12,7 +12,7 @@ const WeatherDisplay = (props) => {
         <div>
             {/* Apply tempStyle to the temperature */}
             <p>Temperature: <span style={tempStyle}>{data.temperature}</span></p>
-            <p>Conditions: <span>{data.conditions}</span></p>
+            <p>Conditions:{data.conditions}</p>
         </div>
     );
 };
